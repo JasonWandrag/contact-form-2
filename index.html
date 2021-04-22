@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jason's Contact Form</title>
+    <!-- Link in CSS here -->
+    <link rel="stylesheet" href="./glasss.css" />
+  </head>
+  <body>
+    <!-- modify this form HTML and place wherever you want your form -->
+
+    <!-- FORM -->
+    <form
+      action="https://formspree.io/f/myylzlqv"
+      method="POST"
+      id="contact-form"
+    >
+      <h1 class="contact-heading">Contact Me</h1>
+      <!-- NAME -->
+      <div class="contact-info">
+        <label for="name" class="contact-label">Your name: </label>
+        <input
+          type="text"
+          id="name"
+          required
+          name="name"
+          class="contact-input"
+          placeholder="Full Name"
+        />
+      </div>
+      <!-- EMAIL  -->
+      <div class="contact-info">
+        <label for="email" class="contact-label"> Your email: </label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          required
+          class="contact-input"
+          placeholder="name@domain.com"
+        />
+      </div>
+      <!-- Phone Number -->
+      <div class="contact-info">
+        <label for="contact" class="contact-label">Your Number: </label>
+        <input
+          type="tel"
+          id="contact"
+          name="contact"
+          required
+          class="contact-input"
+          placeholder="072 123 4567"
+        />
+      </div>
+      <!-- MESSAGE -->
+      <div class="contact-info">
+        <label for="message" class="contact-label"> Your message: </label>
+        <textarea
+          id="message"
+          name="message"
+          class="contact-input"
+          placeholder="Your Message Here"
+        ></textarea>
+      </div>
+
+      <!-- your other form fields go here -->
+
+      <button type="submit" class="contact-button">Send</button>
+    </form>
+  </body>
+</html>
